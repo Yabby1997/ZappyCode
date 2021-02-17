@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		1DB54F7E25DD592700A36C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F7D25DD592700A36C6F /* AppDelegate.swift */; };
 		1DB54F8025DD592700A36C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F7F25DD592700A36C6F /* SceneDelegate.swift */; };
-		1DB54F8225DD592700A36C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F8125DD592700A36C6F /* ViewController.swift */; };
 		1DB54F8525DD592700A36C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB54F8325DD592700A36C6F /* Main.storyboard */; };
 		1DB54F8825DD592700A36C6F /* ZappyCode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F8625DD592700A36C6F /* ZappyCode.xcdatamodeld */; };
 		1DB54F8A25DD592A00A36C6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB54F8925DD592A00A36C6F /* Assets.xcassets */; };
 		1DB54F8D25DD592A00A36C6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB54F8B25DD592A00A36C6F /* LaunchScreen.storyboard */; };
+		1DB54F9725DD5ADC00A36C6F /* CourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F9625DD5ADC00A36C6F /* CourseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DB54F7A25DD592700A36C6F /* ZappyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZappyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB54F7D25DD592700A36C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB54F7F25DD592700A36C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1DB54F8125DD592700A36C6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DB54F8425DD592700A36C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DB54F8725DD592700A36C6F /* ZappyCode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZappyCode.xcdatamodel; sourceTree = "<group>"; };
 		1DB54F8925DD592A00A36C6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB54F8C25DD592A00A36C6F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DB54F8E25DD592A00A36C6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DB54F9625DD5ADC00A36C6F /* CourseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +60,8 @@
 			children = (
 				1DB54F7D25DD592700A36C6F /* AppDelegate.swift */,
 				1DB54F7F25DD592700A36C6F /* SceneDelegate.swift */,
-				1DB54F8125DD592700A36C6F /* ViewController.swift */,
 				1DB54F8325DD592700A36C6F /* Main.storyboard */,
+				1DB54F9625DD5ADC00A36C6F /* CourseTableViewController.swift */,
 				1DB54F8925DD592A00A36C6F /* Assets.xcassets */,
 				1DB54F8B25DD592A00A36C6F /* LaunchScreen.storyboard */,
 				1DB54F8E25DD592A00A36C6F /* Info.plist */,
@@ -140,9 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DB54F8225DD592700A36C6F /* ViewController.swift in Sources */,
 				1DB54F8825DD592700A36C6F /* ZappyCode.xcdatamodeld in Sources */,
 				1DB54F7E25DD592700A36C6F /* AppDelegate.swift in Sources */,
+				1DB54F9725DD5ADC00A36C6F /* CourseTableViewController.swift in Sources */,
 				1DB54F8025DD592700A36C6F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
