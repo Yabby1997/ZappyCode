@@ -9,6 +9,8 @@ import UIKit
 
 class CourseTableViewController: UITableViewController {
 
+    var courses: [Course] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getCourses()
@@ -22,18 +24,26 @@ class CourseTableViewController: UITableViewController {
                 if error != nil {
                     print("ERR")
                 } else if data != nil {
-                    print(String(data: data!, encoding: .utf8)!)
+                    if let coursesFromAPI = try? JSONDecoder().decode([Course].self, from: data!){
+                        DispatchQueue.main.async {
+                            self.courses = coursesFromAPI
+                            self.tableView.reloadData()
+                        }
+                    }
                 }
             }.resume()
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return courses.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell", for: indexPath)
+        let course = courses[indexPath.row]
+        cell.textLabel?.text = course.title
+        
         return cell
     }
 }

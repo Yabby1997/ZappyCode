@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D60EAB025DE83D200792C60 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60EAAF25DE83D200792C60 /* Course.swift */; };
 		1DB54F7E25DD592700A36C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F7D25DD592700A36C6F /* AppDelegate.swift */; };
 		1DB54F8025DD592700A36C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB54F7F25DD592700A36C6F /* SceneDelegate.swift */; };
 		1DB54F8525DD592700A36C6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB54F8325DD592700A36C6F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D60EAAF25DE83D200792C60 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		1DB54F7A25DD592700A36C6F /* ZappyCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZappyCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB54F7D25DD592700A36C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB54F7F25DD592700A36C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				1DB54F7D25DD592700A36C6F /* AppDelegate.swift */,
 				1DB54F7F25DD592700A36C6F /* SceneDelegate.swift */,
 				1DB54F8325DD592700A36C6F /* Main.storyboard */,
+				1D60EAAF25DE83D200792C60 /* Course.swift */,
 				1DB54F9625DD5ADC00A36C6F /* CourseTableViewController.swift */,
 				1DB54F8925DD592A00A36C6F /* Assets.xcassets */,
 				1DB54F8B25DD592A00A36C6F /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			files = (
 				1DB54F8825DD592700A36C6F /* ZappyCode.xcdatamodeld in Sources */,
 				1DB54F7E25DD592700A36C6F /* AppDelegate.swift in Sources */,
+				1D60EAB025DE83D200792C60 /* Course.swift in Sources */,
 				1DB54F9725DD5ADC00A36C6F /* CourseTableViewController.swift in Sources */,
 				1DB54F8025DD592700A36C6F /* SceneDelegate.swift in Sources */,
 			);
