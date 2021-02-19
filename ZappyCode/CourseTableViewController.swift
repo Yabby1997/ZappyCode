@@ -13,7 +13,7 @@ class CourseTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getCourses()
+        //getCourses()
     }
     
     func getCourses(){
@@ -42,8 +42,12 @@ class CourseTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "courseCell", for: indexPath)
         let course = courses[indexPath.row]
-        cell.textLabel?.text = course.title
+        //cell.textLabel?.text = course.title
         
         return cell
+    }
+    
+    @IBAction func reloadTapped(_ sender: Any) {
+        getCourses()
     }
 }

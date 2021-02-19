@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Course Table View Controller-->
+        <!--ZappyCode Courses-->
         <scene sceneID="9b9-Yj-l5q">
             <objects>
                 <tableViewController id="SQH-L9-qxI" customClass="CourseTableViewController" customModule="ZappyCode" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,12 +16,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseCell" id="E62-YC-Af7">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="courseCell" rowHeight="556" id="E62-YC-Af7">
+                                <rect key="frame" x="0.0" y="28" width="414" height="556"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E62-YC-Af7" id="8BQ-Do-4FF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="556"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" image="SwiftUI-iOS14-CourseImageBig" translatesAutoresizingMaskIntoConstraints="NO" id="Yk7-UW-fhu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="233"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="233" id="HuN-By-w5I"/>
+                                                <constraint firstAttribute="width" secondItem="Yk7-UW-fhu" secondAttribute="height" multiplier="1500:844" id="p7R-2g-hdc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SwiftUI Apps on All Devices - iPhone, iPad, Mac, Watch &amp; TV" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHt-QF-vsb">
+                                            <rect key="frame" x="20" y="243" width="374" height="236.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Make Apps and Widgets for iOS 14, macOS 11, watchOS 7 and tvOS 14 using Xcode 12, Swift 5, WidgetKit and Apple Watch" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aJ-uQ-oBh">
+                                            <rect key="frame" x="20" y="487" width="374" height="58"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0aJ-uQ-oBh" secondAttribute="bottom" id="0Qr-XY-kyL"/>
+                                        <constraint firstItem="0aJ-uQ-oBh" firstAttribute="top" secondItem="qHt-QF-vsb" secondAttribute="bottom" constant="7.5" id="0Uz-2m-CKQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="Yk7-UW-fhu" secondAttribute="trailing" id="6Ib-PE-z18"/>
+                                        <constraint firstItem="qHt-QF-vsb" firstAttribute="leading" secondItem="8BQ-Do-4FF" secondAttribute="leadingMargin" id="W7A-s1-hHO"/>
+                                        <constraint firstItem="0aJ-uQ-oBh" firstAttribute="leading" secondItem="8BQ-Do-4FF" secondAttribute="leadingMargin" id="Zv0-Wl-ZPF"/>
+                                        <constraint firstItem="Yk7-UW-fhu" firstAttribute="leading" secondItem="8BQ-Do-4FF" secondAttribute="leading" id="gid-Gc-o3P"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qHt-QF-vsb" secondAttribute="trailing" id="jOk-S1-cSk"/>
+                                        <constraint firstItem="qHt-QF-vsb" firstAttribute="top" secondItem="Yk7-UW-fhu" secondAttribute="bottom" constant="10" id="lLf-1D-wrU"/>
+                                        <constraint firstItem="Yk7-UW-fhu" firstAttribute="top" secondItem="8BQ-Do-4FF" secondAttribute="top" id="qd0-7F-9FK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="0aJ-uQ-oBh" secondAttribute="trailing" id="w4g-8r-fxa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -30,7 +63,13 @@
                             <outlet property="delegate" destination="SQH-L9-qxI" id="NPz-p9-S9j"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="MfW-Hf-DOC"/>
+                    <navigationItem key="navigationItem" title="ZappyCode Courses" id="MfW-Hf-DOC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="qXA-vN-c1H">
+                            <connections>
+                                <action selector="reloadTapped:" destination="SQH-L9-qxI" id="pcu-nw-RZP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0Y-YV-0Gn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -56,6 +95,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SwiftUI-iOS14-CourseImageBig" width="1500" height="844"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
